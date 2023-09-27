@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bienvenido"
+        android:textColor="@color/black"
         android:textSize="50sp"
         android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Intents Explicitos"
+            android:textColor="@color/black"
             android:textSize="30dp"/>
 
         <Button
@@ -70,6 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Intents Implicitos"
+            android:textColor="@color/black"
             android:layout_marginTop="10dp"
             android:textSize="30dp"/>
 
