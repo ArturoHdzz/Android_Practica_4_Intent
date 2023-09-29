@@ -51,9 +51,21 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com/studio"));
-        startActivity(i);
-
-
+        if (v.getId() == R.id.btn5) {
+            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com/studio"));
+            startActivity(i);
+        }
+        if (v.getId() == R.id.btn6) {
+            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 65.896, 75.865"));
+            startActivity(i);
+        }
+        if (v.getId() == R.id.btn7) {
+            Intent i = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            startActivity(i);
+        }
+        if (v.getId() == R.id.btn8) {
+            Intent i = new Intent("android.media.action.IMAGE_CAPTURE");
+            startActivity(i);
+        }
     }
 }
