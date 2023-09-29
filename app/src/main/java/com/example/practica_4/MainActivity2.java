@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.content.ComponentName;
+
 
 public class MainActivity2 extends AppCompatActivity implements View.OnClickListener{
 
@@ -51,6 +53,22 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
+        if (v.getId() == R.id.btn1) {
+            Intent i = new Intent(Intent.makeMainActivity(new ComponentName("com.facebook.katana", "com.facebook.katana.LoginActivity")));
+            startActivity(i);
+        }
+        if (v.getId() == R.id.btn2) {
+            Intent i = new Intent(Intent.makeMainActivity(new ComponentName("com.whatsapp", "com.whatsapp.Main")));
+            startActivity(i);
+        }
+        if (v.getId() == R.id.btn3) {
+            Intent i = new Intent(Intent.makeMainActivity(new ComponentName("com.google.android.youtube", "com.google.android.youtube.app.honeycomb.Shell$HomeActivity")));
+            startActivity(i);
+        }
+        if (v.getId() == R.id.btn4) {
+            Intent i = new Intent(Intent.makeMainActivity(new ComponentName("com.microsoft.office.word", "com.microsoft.office.apphost.LaunchActivity")));
+            startActivity(i);
+        }
         if (v.getId() == R.id.btn5) {
             Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com/studio"));
             startActivity(i);
